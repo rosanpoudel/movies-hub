@@ -1,0 +1,22 @@
+// movie card
+.single-movie {
+    width: calc(100% / 2 - 10px);
+    margin-right: 10px;
+    margin-bottom: 15px;
+
+    @include mq('tablet') {
+        width: calc(100% / 8 - 10px);
+
+    }
+
+    &:hover {
+        box-shadow: 0 2px 15px $color-white;
+        transition: $transition;
+    }
+
+    img {}
+
+    &:nth-child(8n) {
+        margin-right: 0;
+    }
+}

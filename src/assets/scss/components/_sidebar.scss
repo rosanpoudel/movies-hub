@@ -1,0 +1,63 @@
+// sidebar
+.sidebar {
+    background: $color-secondary;
+    position: fixed;
+    left: 0;
+    top: 80px;
+    height: 100vh;
+    width: 100px;
+    transition: $transition;
+
+    @include mq('tablet') {
+        display: block;
+    }
+
+
+    .sidebar-link {
+        background: transparent;
+        color: $color-light-white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 90px;
+        transition: $transition;
+
+        &.active {
+            color: $color-white;
+            background: $btn-active;
+            transition: $transition;
+
+            &:hover {
+                background: $btn-active;
+
+            }
+        }
+
+
+        i {
+            font-size: 24px;
+            margin-bottom: 5px;
+            transition: $transition;
+
+        }
+
+        span {
+            display: block;
+            line-height: 1.2;
+            font-size: 14px;
+            transition: $transition;
+
+        }
+
+
+
+        &:hover {
+            text-decoration: none;
+            background: $color-black;
+        }
+    }
+
+
+}

@@ -1,0 +1,27 @@
+// pagination
+.pagination-wrapper {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+
+    .page-item {
+        display: inline-block;
+        background: #ffffff;
+        cursor: pointer;
+        list-style: none;
+        border: none;
+        padding: 10px 20px;
+        outline: none;
+        transition: $transition;
+
+        &.active {
+            background: $btn-active;
+            color: $color-white;
+            transition: $transition;
+
+        }
+    }
+}

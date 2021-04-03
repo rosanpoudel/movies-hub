@@ -1,0 +1,70 @@
+// top nav
+.nav {
+    background: $color-primary;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    .nav-wrap {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 10px 0 10px 0px;
+        height: 80px;
+
+    }
+
+    .logo {
+        margin-left: 20px;
+
+        a {
+            color: #d7d7d7;
+            font-size: 30px;
+            font-weight: bold;
+            text-transform: uppercase;
+
+            &:hover {
+                text-decoration: none;
+            }
+
+            span {
+                color: $btn-active;
+            }
+        }
+    }
+
+
+
+
+    .nav-toggler {
+        width: 36px;
+        cursor: pointer;
+
+        &:before,
+        &:after,
+        >span {
+            content: '';
+            display: block;
+            background-color: $color-light-white;
+            display: block;
+            height: 4px;
+            margin: 6px 0;
+            transition: $transition;
+        }
+
+        &.toggle-nav {
+            &:before {
+                transform: translateY(10px) rotate(135deg);
+            }
+
+            &:after {
+                transform: translateY(-10px) rotate(-135deg);
+            }
+
+            &>span {
+                transform: scale(0);
+            }
+        }
+    }
+}

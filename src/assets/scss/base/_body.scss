@@ -1,0 +1,39 @@
+body {
+    background: $color-tertiary;
+    color: $color-light-white;
+    font-family: serif;
+
+    &.nav-opened {
+
+        .sidebar {
+            transition: $transition;
+            width: 50px;
+
+            .sidebar-link {
+                height: 70px;
+                transition: $transition;
+
+
+                span {
+                    font-size: 0;
+                    transition: $transition;
+
+                    i {
+                        font-size: 18px;
+                        transition: $transition;
+
+                    }
+
+                }
+            }
+
+        }
+
+        .page-content {
+            margin-left: 50px;
+            transition: $transition;
+
+        }
+
+    }
+}
